@@ -26,7 +26,7 @@ function enviarSolicitud() {
   const programaId = document.getElementById("programaId").value;
 
 
-  const solicitud = INSERT INTO solicitudes (nombre, programaId) VALUES ('${nombre}', '${programaId}');
+  const solicitud = `INSERT INTO solicitudes (nombre, programaId) VALUES ('${nombre}', '${programaId}');
   console.log("Solicitud enviada:", solicitud);
 
   eval(solicitud);
